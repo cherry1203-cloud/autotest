@@ -1,0 +1,5 @@
+测试脚本文件路径,文件名称,执行状态,执行顺序
+D:\autotest\homework\script\ind,test_yhzc.py,0,2
+D:\autotest\homework\script\ind,test_gxyhxx.py,1,4
+D:\autotest\homework\script\ind,test_yhzc.py,1,2
+D:\autotest\homework\script\ind,test_gxyhxx.py,1,3

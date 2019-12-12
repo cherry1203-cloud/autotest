@@ -1,0 +1,495 @@
+{
+	"info": {
+		"name": "jwmall",
+		"_postman_id": "99eed990-aa4c-6f89-fc2d-d1a99f87ff39",
+		"description": "这是商城测试",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "用户模块",
+			"description": "用户模块",
+			"item": [
+				{
+					"name": "用户登录接口",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "张伟",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/user/login.do",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"user",
+								"login.do"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "用户注册接口",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "李明",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "705328476@qq.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "13311096380",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "question",
+									"value": "最喜欢的水果",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "answer",
+									"value": "苹果",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/user/register.do",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"user",
+								"register.do"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "检测用户名或者邮件是否有效",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "str",
+									"value": "705328476@qq.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "email",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/user/check_vaild.do",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"user",
+								"check_vaild.do"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "忘记密码提示密保接口",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "李明",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/user/forget_get_question.do",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"user",
+								"forget_get_question.do"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "提交问题答案接口",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "李明",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "question",
+									"value": "最喜欢的水果",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "answer",
+									"value": "苹果",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/user/forget_check_answer.do",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"user",
+								"forget_check_answer.do"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "回答完密保问题后修改密码",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "李明",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "passwordNew",
+									"value": "666666",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": " forgetToken",
+									"value": "b6143804-4183-4b0f-b95f-5e1e3cdc4286",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/user/forget_reset_password.do",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"user",
+								"forget_reset_password.do"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "登录成功后修改密码",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "passwordOld",
+									"value": "666666",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "passwordNew",
+									"value": "123456789",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8082/user/reset_password.do",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"user",
+								"reset_password.do"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "更新用户信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "6912034501@qq.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "13701973240",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "answer",
+									"value": "了凡四训",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "question",
+									"value": "最喜欢的书",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8082/user/update_information.do",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8082",
+							"path": [
+								"user",
+								"update_information.do"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "获取用户信息",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8088/user/get_information.do",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"user",
+								"get_information.do"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "登出",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8088/user/loginout.do",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"user",
+								"loginout.do"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "管理员登录接口",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "admin",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8088/manage/user/login.do",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8088",
+							"path": [
+								"manage",
+								"user",
+								"login.do"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

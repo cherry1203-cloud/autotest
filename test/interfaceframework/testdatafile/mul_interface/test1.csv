@@ -1,0 +1,4 @@
+url ,http://localhost:8080/jwshoplogin/user/register.do,expectedresult ,注册成功, interface_name ,用户注册接口,6,username,meimei,password,123456,email,meimei@qq.com,phone,13122222222,question ,喜欢的花 ,answer ,向日葵
+url ,http://localhost:8080/jwshoplogin/user/login.do,expectedresult ,登录成功 , interface_name ,用户登录接口,2,username,meimei,password,123456,,,,,,,,
+url,http://localhost:8080/jwshoplogin/user/check_vaild.do,expectedresult ,校验成功, interface_name ,检测用户名或者邮件是否有效接口 ,2,str ,meimei,type, username        ,,,,,,,,
+url ,http://localhost:8080/jwshoplogin/user/forget_get_question.do,expectedresult ,喜欢的花, interface_name , 忘记密码提示密保接口,1,username,meimei,,,,,,,,,,

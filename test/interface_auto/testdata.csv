@@ -1,0 +1,3 @@
+url,http://localhost:8080/jwshoplogin/user/register.do,expected_msg,注册成功,interface_name,用户注册接口,6,username,丽丽,password,111111,email,lili@qq.com,phone,13123459870,question,父亲的生日,answer,19580124
+url,http://localhost:8080/jwshoplogin/user/login.do,expected_msg,登录成功,interface_name,用户登录接口,2,username,丽丽,password,111111,,,,,,,,
+url,http://localhost:8080/jwshoplogin/user/check_vaild.do,expected_msg,校验成功,interface_name,检测用户名或者邮件是否有效,2,str,丽丽,type,username,,,,,,,,

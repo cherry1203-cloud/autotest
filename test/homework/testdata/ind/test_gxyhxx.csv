@@ -1,0 +1,9 @@
+http://localhost:8080/jwshoplogin/user/login.do,2,username,meimei,password,123456,,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,1,email,meimei@qq.com,更新个人信息成功,,,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,1,email,cc@qq.com,"email已存在,请更换email再尝试更新",,,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,1,phone,13311111111,更新个人信息成功,,,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,1,question,最喜欢的水果1,更新个人信息成功,,,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,1,answer,苹果1,更新个人信息成功,,,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,2,email,meimei@qq.com,phone,13311111112,更新个人信息成功,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,2,question,最喜欢的水果1,answer,苹果1,更新个人信息成功,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,4,email,meimei@qq.com,phone,13311111113,question,最喜欢的水果4,answer,苹果4,更新个人信息成功

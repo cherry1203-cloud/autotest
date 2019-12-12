@@ -1,0 +1,3 @@
+http://localhost:8080/jwshoplogin/user/register.do,6,username,meimei,password,123456,email,meimei@qq.com,phone,13311096380,question,最喜欢的水果,answer,苹果,用户名已经存在
+http://localhost:8080/jwshoplogin/user/register.do,6,username,meimei,password,123456,email,meimei@qq.com,phone,13311096380,question,最喜欢的水果,answer,苹果,用户名已经存在
+http://localhost:8080/jwshoplogin/user/register.do,6,username,meimei7,password,123456,email,meimei@qq.com,phone,13311096380,question,最喜欢的水果,answer,苹果,邮件已经存在

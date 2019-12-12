@@ -1,0 +1,9 @@
+http://localhost:8080/jwshoplogin/user/login.do,2,username,meimei,password,123456,,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,1,email,meimei2@qq.com,更新个人信息成功,,,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,1,email,admin@happymmall.com,"email已存在,请更换email再尝试更新",,,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,1,phone,13123456789,更新个人信息成功,,,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,1,question,喜欢的书,更新个人信息成功,,,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,1,answer,西游记,更新个人信息成功,,,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,2,email,meimei@qq.com,phone,13223456789,更新个人信息成功,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,2,question,问题更新2,answer,答案更新2,更新个人信息成功,,,,
+http://localhost:8080/jwshoplogin/user/update_information.do,4,email,meime4@qq.com,phone,13423456789,question,喜欢的书,answer,西游记,更新个人信息成功

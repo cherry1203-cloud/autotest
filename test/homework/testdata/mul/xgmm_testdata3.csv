@@ -1,0 +1,5 @@
+http://localhost:8080/jwshoplogin/user/register.do,注册成功,用户注册接口,6,username,meimei,password,123456,email,meimei@qq.com,phone,13311096380,question,最喜欢的水果,answer,苹果7
+http://localhost:8080/jwshoplogin/user/login.do,登录成功,用户登录接口,2,username,meimei,password,123456,,,,,,,,
+http://localhost:8080/jwshoplogin/user/forget_get_question.do,最喜欢的水果,忘记密码提示密保接口,1,username,meimei,,,,,,,,,,
+http://localhost:8080/jwshoplogin/user/forget_check_answer.do,data,提交问题答案接口,3,username,meimei,question,最喜欢的水果,answer,苹果7,,,,,,
+http://localhost:8080/jwshoplogin/user/forget_check_answer.do,问题的答案错误,提交问题答案接口,3,username,meimei,question,最喜欢的水果,answer,苹果,,,,,,

@@ -1,0 +1,22 @@
+是否执行,接口脚本类型,接口脚本名称,执行顺序,接口名称,访问 地址,接口参数,返回值,接口测试数据文件名,接口测试报告文件名
+YES,1,registertest,1,用户注册接口,http://localhost:8080/jwshoplogin/user/register.do,"1.username：admin
+2.password:111111",,无,无
+YES,1,logintest,2,用户登录接口,http://localhost:8080/jwshoplogin/user/login.do,,,userinfo.csv,testresult.csv
+No,1,checktest,0,检测用户名或者邮件是否有空接口,http://localhost:8080/jwshoplogin/user/check_vaild.do,,,,
+YES,2,workflow_forgetpassword_v5,3,忘记密码联调接口,"#1.用户注册接口
+#2.用户登录接口
+#3.忘记密码接口
+#4.提交密保问题答案
+#5.回答完密保问题后修改密码接口
+6.登录接口",,,test1.csv,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,

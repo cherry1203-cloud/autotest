@@ -1,0 +1,5 @@
+测试脚本路径,测试脚本文件名,是否运行,执行顺序
+D:\learngit\interfaceframework\script\ind_interface,test_updateuser_v3.py,No ,2
+D:\learngit\interfaceframework\script\ind_interface,test_updateuser_v5.py,Yes,1
+D:\learngit\interfaceframework\script\ind_interface,test_updateuser_v3.py,No ,4
+D:\learngit\interfaceframework\script\ind_interface,test_updateuser_v2.py,Yes,3

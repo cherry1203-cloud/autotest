@@ -1,0 +1,12 @@
+from interface_auto.workflow_v2 import workflow_forgetpassword_v2_test
+import requests
+if __name__ == '__main__':
+    url = "http://localhost:8080/jwshoplogin/user/forget_get_question.do"
+    userinfo = {}
+    userinfo = {"username": "jessica"}
+    msg="喜欢的书"
+    interface_name="忘记密码接口"
+    workflowobj3=workflow_forgetpassword_v2_test()
+    workflowobj3.userinterface_test(url, userinfo, msg,interface_name)
+
+
