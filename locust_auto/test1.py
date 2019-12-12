@@ -14,3 +14,5 @@ class webSiteUser(HttpLocust):
     host="http://localhost/iwebshop/"
     min_wait = 2000
     max_wait = 5000
+
+    test1
